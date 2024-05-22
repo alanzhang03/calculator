@@ -14,34 +14,42 @@ h1{
     background-color: grey;
     margin: auto;
     text-align: center;
-    height: 85vh;
+    height: 75vh;
     width: 30vw;
     border: black solid 5px;
-    border-radius: 3%;
+    border-radius: 1%;
 }
 
 .calculator-display-math{
-    height: 10%;
-    background-color: white;
-    width: 100%;
-    border-radius: 3%;
-
-    
+    margin: auto;
+    margin-top: 1vh;
+    height: 15%;
+    width: 95%;
+    background-color: lightgrey;
+    border: black solid 5px;
+ 
 }
 
 .buttons-container{
+    margin: auto;
+    width: 95%;
     margin-top: 5vh;
 
+
 }
 
-.functions-button{
+.function-buttons-container {
+
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .1vw;
+    height: 7.5vh;
+
 }
 
-.num-buttons{
+.num-buttons-container {
     display: grid;
-    
-    height: 100px;
-    width: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
     background-color: black;
 }
