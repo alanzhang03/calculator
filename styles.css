@@ -28,3 +28,20 @@ h1{
 
     
 }
+
+.buttons-container{
+    margin-top: 5vh;
+
+}
+
+.functions-button{
+    display: grid;
+}
+
+.num-buttons{
+    display: grid;
+    
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}

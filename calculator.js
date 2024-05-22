@@ -22,3 +22,4 @@ console.log(add(1,2));
 console.log(mutiply(6,2));
 console.log(subtract(6,2));
 console.log(divide(3,0));
+
