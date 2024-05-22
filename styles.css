@@ -1,0 +1,24 @@
+body{
+    background-color: #add8e6;
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+.calculator-box{
+    background-color: grey;
+    margin: auto;
+    text-align: center;
+    height: 85vh;
+    width: 30vw;
+    border: black solid 5px;
+    border-radius: 3%;
+}
+
+.calculator-display-math{
+    height: 15vh;
+    width: auto;
+    background-color:;
+}
