@@ -14,12 +14,14 @@ function divide(num1,num2){
     return num1/num2;
 }
 
+const functions = ['+', '-', '*', '/']
+const nums = ['1', '2', '3', '4','5','6','7','8','9','0',]
 
-const calcContainer = document.getElementById("calculator-container");
+const functionButtonsContainer = document.querySelector("function-buttons-container")
+const numButtonsContainer = document.querySelector("num-buttons-container")
 
-
-console.log(add(1,2));
-console.log(mutiply(6,2));
-console.log(subtract(6,2));
-console.log(divide(3,0));
+functionButtonsContainer.forEach(symbol, ()=>{
+    
+    functionButtonsContainer.
+})
 

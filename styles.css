@@ -39,7 +39,6 @@ h1{
 }
 
 .function-buttons-container {
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: .1vw;
@@ -52,4 +51,8 @@ h1{
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
     background-color: black;
+}
+
+button{
+    border: black solid 3px;
 }
