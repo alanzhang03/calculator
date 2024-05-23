@@ -8,13 +8,14 @@ body {
 h1 {
     text-align: center;
     color: black;
+    font-size: 5vh;
 }
 
 .calculator-box {
     background-color: grey;
     margin: auto;
     text-align: center;
-    height: 75vh;
+    height: 70vh;
     width: 30vw;
     border: black solid 5px;
     border-radius: 1%;
@@ -52,27 +53,22 @@ button {
 }
 
 button.ac, button.plus-minus, button.percent {
-    background-color: #1E90FF;
+    background-color: #FFA500;
     color: white;
 }
 
-button.divide, button.multiply, button.subtract, button.add {
+button.divide, button.multiply, button.subtract, button.add, button.equals {
     background-color: #FFA500;
     color: white;
 }
 
 button.zero {
     grid-column: span 2;
-    background-color: #add8e6;
+    background-color: #D3D3D3;
     color: white;
 }
 
 button.one, button.two, button.three, button.four, button.five, button.six, button.seven, button.eight, button.nine, button.dot {
-    background-color: #add8e6;
-    color: white;
-}
-
-button.equals {
-    background-color: black;
+    background-color: #D3D3D3;
     color: white;
 }
