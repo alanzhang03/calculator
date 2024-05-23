@@ -1,16 +1,16 @@
-body{
+body {
     background-color: #add8e6;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     text-align: center;
     color: black;
 }
 
-.calculator-box{
+.calculator-box {
     background-color: grey;
     margin: auto;
     text-align: center;
@@ -20,39 +20,59 @@ h1{
     border-radius: 1%;
 }
 
-.calculator-display-math{
+.calculator-display-math {
     margin: auto;
     margin-top: 1vh;
     height: 15%;
     width: 95%;
     background-color: lightgrey;
     border: black solid 5px;
- 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1%;
+    font-size: 2em;
 }
 
-.buttons-container{
-    margin: auto;
-    width: 95%;
-    margin-top: 5vh;
-
-
-}
-
-.function-buttons-container {
+.buttons-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: .1vw;
-    height: 7.5vh;
-
+    gap: 0.1vw;
+    width: 95%;
+    margin: auto;
+    margin-top: 5vh;
 }
 
-.num-buttons-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+button {
+    height: 10vh;
+    width: 100%;
+    border-radius: 5%;
+    border: black solid 2px;
+    font-size: 3vh;
+}
+
+button.ac, button.plus-minus, button.percent {
+    background-color: #1E90FF;
+    color: white;
+}
+
+button.divide, button.multiply, button.subtract, button.add {
+    background-color: #FFA500;
+    color: white;
+}
+
+button.zero {
+    grid-column: span 2;
+    background-color: #add8e6;
+    color: white;
+}
+
+button.one, button.two, button.three, button.four, button.five, button.six, button.seven, button.eight, button.nine, button.dot {
+    background-color: #add8e6;
+    color: white;
+}
+
+button.equals {
     background-color: black;
-}
-
-button{
-    border: black solid 3px;
+    color: white;
 }
