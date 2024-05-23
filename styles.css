@@ -53,22 +53,22 @@ button {
 }
 
 button.ac, button.plus-minus, button.percent {
-    background-color: #FFA500;
-    color: white;
+    background-color: lightblue;
+    color: black;
 }
 
 button.divide, button.multiply, button.subtract, button.add, button.equals {
-    background-color: #FFA500;
-    color: white;
+    background-color: peachpuff;
+    color: black;
 }
 
 button.zero {
     grid-column: span 2;
-    background-color: #D3D3D3;
-    color: white;
+    background-color: lavender;
+    color: black;
 }
 
-button.one, button.two, button.three, button.four, button.five, button.six, button.seven, button.eight, button.nine, button.dot {
-    background-color: #D3D3D3;
-    color: white;
+button.numbers, button.dot {
+    background-color: lavender;
+    color: black;
 }
