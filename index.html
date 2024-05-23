@@ -5,40 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan's Calculator App</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js" defer></script>
 </head>
 <body>
     <h1>Alan's Calculator App</h1>
     <div class="calculator-box">
-        <div class="calculator-display-math" id="display">0</div>
+        <input class="calculator-display" type="text" id="calculatorDisplay">
         <div class="buttons-container">
-            <!--Functions-->
-            <button class="ac">AC</button>
-            <button class="plus-minus">+/-</button>
-            <button class="percent">%</button>
-            <button class="divide">/</button>
-            <!--Numbers-->
-            <button class="numbers">7</button>
-            <button class="numbers">8</button>
-            <button class="numbers">9</button>
-            <!--Functions-->
-            <button class="multiply">*</button>
-            <!--Numbers-->
-            <button class="numbers">4</button>
-            <button class="numbers">5</button>
-            <button class="numbers">6</button>
-            <!--Functions-->
-            <button class="subtract">-</button>
-            <!--Numbers-->
-            <button class="numbers">1</button>
-            <button class="numbers">2</button>
-            <button class="numbers">3</button>
-            <!--Functions-->
-            <button class="add">+</button>
-            <!--Numbers-->
-            <button class="zero">0</button>
-            <button class="dot">.</button>
-            <!--Functions-->
-            <button class="equals">=</button>
+            <!-- Functions -->
+            <button class="ac" onclick="clearDisplay()">AC</button>
+            <button class="plus-minus" onclick="changeSign()">+/-</button>
+            <button class="percent" onclick="calcPercentage()">%</button>
+            <button class="divide" onclick="appendToDisplay('/')">/</button>
+            <!-- Numbers -->
+            <button class="numbers" onclick="appendToDisplay('7')">7</button>
+            <button class="numbers" onclick="appendToDisplay('8')">8</button>
+            <button class="numbers" onclick="appendToDisplay('9')">9</button>
+            <!-- Functions -->
+            <button class="multiply" onclick="appendToDisplay('*')">*</button>
+            <!-- Numbers -->
+            <button class="numbers" onclick="appendToDisplay('4')">4</button>
+            <button class="numbers" onclick="appendToDisplay('5')">5</button>
+            <button class="numbers" onclick="appendToDisplay('6')">6</button>
+            <!-- Functions -->
+            <button class="subtract" onclick="appendToDisplay('-')">-</button>
+            <!-- Numbers -->
+            <button class="numbers" onclick="appendToDisplay('1')">1</button>
+            <button class="numbers" onclick="appendToDisplay('2')">2</button>
+            <button class="numbers" onclick="appendToDisplay('3')">3</button>
+            <!-- Functions -->
+            <button class="add" onclick="appendToDisplay('+')">+</button>
+            <!-- Numbers -->
+            <button class="zero" onclick="appendToDisplay('0')">0</button>
+            <button class="dot" onclick="appendToDisplay('.')">.</button>
+            <!-- Functions -->
+            <button class="equals" onclick="calculate()">=</button>
         </div>
     </div>
 </body>
