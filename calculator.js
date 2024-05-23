@@ -21,7 +21,14 @@ const functionButtonsContainer = document.querySelector("function-buttons-contai
 const numButtonsContainer = document.querySelector("num-buttons-container")
 
 functionButtonsContainer.forEach(symbol, ()=>{
-    
-    functionButtonsContainer.
+    const button = document.createElement('button')
+    button.textContent = symbol
+    functionButtonsContainer.appendChild(button);
+})
+
+numButtonsContainer.forEach(number, ()=>{
+    const numButton = document.createElement('button')
+    numButton.textContent = number
+    numButtonsContainer.appendChild(numButton)
 })
 
